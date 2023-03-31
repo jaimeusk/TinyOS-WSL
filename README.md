@@ -11,14 +11,14 @@ This guide is based on the instructions that you can find in the [TinyOS officia
 
 > (I tried to made this on Debian 11 "bullseye" and I couldn't make it work, so if you find the way to make it work, just let me know it please)
 
-As administrator, run on your windows terminal or PowerShell:
+As administrator, run on your windows terminal or PowerShell and then, restart your PC.
 ```
 wsl --install -d Ubuntu-18.04
 ```
 
 3. **[Install USBIPD-WIN on your Windows PC](https://learn.microsoft.com/en-us/windows/wsl/connect-usb) to get support for connect USB devices to your Ubuntu on WSL.**
 
-If you have Windows Package Manager _ _(winget)_ _ you can install usbipd-win running the command:
+If you have Windows Package Manager _(winget)_ you can install usbipd-win running the command:
 ```
 winget install --interactive --exact dorssel.usbipd-win
 ```
@@ -28,7 +28,7 @@ winget install --interactive --exact dorssel.usbipd-win
 wsl -d Ubuntu-18.04
 ```
 
-5. **Once you're on Ubuntu, update and upgrade your distribution. `apt update` and `apt upgrade`.**
+5. **Once you are on Ubuntu, update and upgrade your distribution. `apt update` and `apt upgrade`.**
 > With root permissions (using root user or sudo)
 
 6. **To run the usbipd on the ubuntu side, you have to install the following packages:**
