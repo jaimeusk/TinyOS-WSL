@@ -1,5 +1,5 @@
 # TinyOS-WSL
-This guide will provide you a simple way to get **TinyOS** on your **WSL** (Windows on Linux) working with the USB's of your PC using **usbipd**.
+This guide will provide you a simple way to get _**TinyOS**_ on your _**WSL**_ (Windows on Linux) working with the USB's of your PC using _**usbipd**_.
 
 This guide is based on the instructions that you can find in the [TinyOS official Wiki](http://tinyos.stanford.edu/tinyos-wiki/index.php/Installing_From_Source).
 
@@ -11,7 +11,7 @@ This guide is based on the instructions that you can find in the [TinyOS officia
 
 > (I tried to made this on Debian 11 "bullseye" and I couldn't make it work, so if you find the way to make it work, just let me know it please)
 
-As administrator, run on your windows terminal or PowerShell and then, restart your PC.
+As administrator, run on your Windows Terminal or PowerShell and then, restart your PC.
 ```
 wsl --install -d Ubuntu-18.04
 ```
@@ -29,21 +29,20 @@ wsl -d Ubuntu-18.04
 ```
 
 5. **Once you are on Ubuntu, update and upgrade your distribution. `apt update` and `apt upgrade`.**
-> With root permissions (using root user or sudo)
+_With root permissions (Using root user or sudo)_
 
-6. **To run the usbipd on the ubuntu side, you have to install the following packages:**
-
-> With root permissions 
+6. **To run the usbipd on the ubuntu side, you have to install the following packages.**
+_With root permissions_
 ```
 apt install linux-tools-generic hwdata
 ```
 
-> Run the next command
+> After this, run the next command
 ```
 update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/*-generic/usbip 20
 ```
 
-7. Once you have this installed on your ubuntu while you still running it, go to a Windows Terminal with admin permissions and run `usbipd wsl list` to list the usb devices connected to your host machine.
+7. Once you have this installed on your Ubuntu, while you still running it, go to a **Windows Terminal** with admin permissions and run `usbipd wsl list` to list the usb devices connected to your host machine.
 
 
 8. Run the following command to attach the desired usb to the WSL instance.
@@ -54,7 +53,7 @@ update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/*-
 usbipd wsl attach --busid <bus-id> [--distribution Ubuntu-18.04]
 ```
 
-9. Go to your Ubuntu WSL Instance and run `lsusb` to check that you have the usb attached correctly.
+9. Go to your **Ubuntu WSL Instance** and run `lsusb` to check that you have the usb attached correctly.
 
 ## Installing TinyOS from sources
 0. **Get the prerequisites**
@@ -91,6 +90,7 @@ make install
 git clone https://github.com/tp-freeforall/prod
 ```
 
+- Run the normal build procedure
 ```
 mv prod tinyos-main
 cd tinyos-main/tools
