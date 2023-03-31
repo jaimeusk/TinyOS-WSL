@@ -61,7 +61,7 @@ usbipd wsl attach --busid <bus-id> [--distribution Ubuntu-18.04]
 _(With root permissions)_
 
 ```
-apt install automake emacs bison flex gperf git make openjdk-8-headless gcc-msp430 g++ python3 python3-serial python python-serial 
+apt install automake emacs bison flex gperf git make openjdk-8-jdk-headless gcc-msp430 g++ python3 python3-serial python python-serial 
 ```
 
 1. **Install nesC from sources**
