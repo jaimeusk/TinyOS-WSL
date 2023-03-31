@@ -59,7 +59,7 @@ usbipd wsl attach --busid <bus-id> [--distribution Ubuntu-18.04]
 ## Installing TinyOS from sources
 
 1. **Install nesC from sources**
-  - Get the prerequisites _ _(With root permissions)_ _
+  - Get the prerequisites _(With root permissions)_
 
 ```
 apt install automake emacs bison flex gperf git
