@@ -4,7 +4,7 @@ This guide will provide you a simple way to get **TinyOS** on your **WSL** (Wind
 This guide is based on the instructions that you can find in the [TinyOS official Wiki](http://tinyos.stanford.edu/tinyos-wiki/index.php/Installing_From_Source).
 
 ## Prerequisites
-1. **[Install WSL2 on your Windows PC](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature)*
+1. **[Install WSL2 on your Windows PC](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature)**
 
 2. **Install Ubuntu-18.04 on your WSL.**
 > (This guide is made using this distribution, I can't ensure it works with others distros)
