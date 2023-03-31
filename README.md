@@ -62,7 +62,7 @@ usbipd wsl attach --busid <bus-id> [--distribution Ubuntu-18.04]
   - Get the prerequisites _(With root permissions)_
 
 ```
-apt install automake emacs bison flex gperf git
+apt install automake emacs bison flex gperf git make
 apt install openjdk-8-jdk-headless
 
 ```
@@ -89,6 +89,7 @@ make install
   - Get the prerequisites of TinyOS
 ```
 apt install gcc-msp430
+apt install g++
 ```
 
   - Get the sources of TinyOS
@@ -98,7 +99,7 @@ git clone https://github.com/tp-freeforall/prod
 
 ```
 mv prod tinyos-main
-cd tinyos-main
+cd tinyos-main/tools
 ./Bootstrap
 ./configure
 make
