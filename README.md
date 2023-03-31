@@ -57,15 +57,11 @@ usbipd wsl attach --busid <bus-id> [--distribution Ubuntu-18.04]
 9. Go to your Ubuntu WSL Instance and run `lsusb` to check that you have the usb attached correctly.
 
 ## Installing TinyOS from sources
+0. **Get the prerequisites**
+_(With root permissions)_
 
 1. **Install nesC from sources**
-  - Get the prerequisites _(With root permissions)_
 
-```
-apt install automake emacs bison flex gperf git make
-apt install openjdk-8-jdk-headless
-
-```
   - Get the source from GitHub repo:
 
 > I sugest to locate all on /opt/nesc/
@@ -85,12 +81,6 @@ make install
 2. **Install TinyOS from sources**
 
 > I sugest to locate all on /opt/tinyos-main/
-
-  - Get the prerequisites of TinyOS
-```
-apt install gcc-msp430
-apt install g++
-```
 
   - Get the sources of TinyOS
 ```
